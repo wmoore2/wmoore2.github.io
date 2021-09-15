@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ASI Fluid Co-op Work Term Report</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="index.html">Home</a> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="asi.html">ASI Fluid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sfe.html">Solutions for Education</a>
+          </li>
+          <!--
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-color: rgb(219, 52, 155);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1 style="color: blanchedalmond;">Solutions for Education</h1>
+            <h2 class="subheading" style="color: blanchedalmond;">S21</h2>
+            <span class="meta" style="color: blanchedalmond;">William Moore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <span class="section-heading">Introduction</span>
+        <p>Solutions for Education (SFE) is a startup created in 2021 by Paul Moore. The company aims develop cloud-based software to aid educators in various ways. The most notable being a website dedicated to automating the generation of report card comments. In my time working at SFE, I did full stack development and began writing the product from scratch. I learned an immense amount about the tech stack used in this time.</p>
+        <span class="section-heading">About SFE</span>
+        <p>SFE is a startup with products aimed at aiding educators, primarily in reducing the time required to write comments for report cards.<br/><br/>
+        
+          SFE’s main product is the report card comment generator. This application aims to help teachers regardless of location is producing report cards more rapidly. Seeing as the act of writing report cards can take in surplus of 40 hours, for a single batch of report cards, teachers are searching for a more efficient way to write them. <br/><br/>
+          
+          Paul Moore is a physics teacher, and this application is all his idea, communicated to me for implementation. I will go into more detail about the product in the Job Description section on this webpage
+        </p>
+
+        <span class="section-heading">Goals</span>
+        <p>My goals for this work term were largely about learning new things, most notably learning new programming languages and frameworks.<br></br>
+          
+          I set myself a goal to learn two new languages: Python and TypeScript. I was successful in this goal, as I became proficient in writing Python (using the Django library with Django RESTful API). I also became proficient at writing TypeScript, a statically type checked superset of the JavaScript programming language. In learning TypeScript, I also learned about Babel: a transpiler, and Webpack: a JavaScript bundling package.<br></br>
+          
+          Another technology I wanted to learn about was the frontend TypeScript framework React. I successfully learned how to write React with TypeScript and was able to create a web application using primarily this framework. I found React easy to pick up with plenty of more advanced tools to use once I became more familiar with its constructs.<br></br>
+          
+          Finally, the last goal I had was to deploy an application. I decided to use Heroku for deployment, as it is free, scalable, and easy to get started with. I successfully learned to use Heroku in its basics and was able to deploy my web application through it.
+        </p>
+        
+        <span class="section-heading">Job Description</span>
+        <p>My role at SFE consisted of entirely full stack developer duties. I was responsible for everything from authentication to frontend.
+          <br></br>
+          I wrote the website from nothing, using Django on the backend and React with TypeScript on the frontend. Writing authentication was a large part of this project. I wanted to learn how to write a simple authentication system which would allow users to create accounts and login/logout of them. I accomplished this with the use of JSON Web Tokens in conjunction with an addon for Django RESTful API to generate the tokens on the backend for valid users and store them on the frontend as cookies. This took the most time, learning all the technologies involved and I feel as if I got a lot out of the experience. 
+          <br></br>
+          Brainstorming the architecture of how user input data would be stored was another big part of the position. I was responsible for creating every Django model used. This includes a customized user model for use with authentication, as well as models for every unique piece of data the website would handle. This includes user created classes (as in school classes), subjects, students, and marks. This involved figuring out how to store each piece of data in relation to others, as the data is more complicated than meets the eye. The approach I took is faster and more scalable than using a non-relational database and storing plain JSON or something similar. I used a relational PostgreSQL database which interfaced quite well with Django. Each model would have a foreign key relation to another model as well as the user which created the object, to easily retrieve all objects associated with a specific user.
+          <br></br>
+          There is much more planned for the website, I was only able to complete the mark book portion, which allows teachers to enter student information. This is vital for the eventual generator. The next step is to plan the generator out fully and implement it.
+          <br></br>  
+        </p>
+        
+        <span class="section-heading">Conclusions</span>
+        <p>This work term gave me a lot of freedom to use the technologies I wanted to, work at my own pace, and build a website from scratch. I could keep talking about my experience, but I have decided to keep it somewhat concise. I learned a great deal about Python, Django, React, TypeScript, and full stack development in general. Overall, this experience was a great one and my summer was certainly put to good use, constantly learning new things, and honing my abilities as a programmer.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <!--
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+              
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            -->
+            <li class="list-inline-item">
+              <a href="https://github.com/wmoore2/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; William Moore 2021</p>
+          
+          <a class="copyright text-muted" href="https://startbootstrap.com/theme/clean-blog">This website template is the Clean Blog Template from Start Bootstrap. Licensed under MIT licensing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
