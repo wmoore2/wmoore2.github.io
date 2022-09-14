@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ASI Fluid Co-op Work Term Report</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+    type='text/css'>
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <!-- <a class="navbar-brand" href="index.html">Home</a> -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="asi.html">ASI Fluid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sfe.html">Solutions for Education</a>
+          </li>
+          <!--
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <a class="nav-link" href="post.html">Sample Post</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-color: rgb(219, 52, 155);">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1 style="color: blanchedalmond;">Solutions for Education</h1>
+            <h2 class="subheading" style="color: blanchedalmond;">S21</h2>
+            <span class="meta" style="color: blanchedalmond;">William Moore</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <span class="section-heading">Introduction</span>
+        <p>CognisantMD (CMD) is a Toronto based startup in the medical technology space. They are the nation’s leading provider of EMR-integrated patient engagement solutions. Their main product is the Ocean platform. In my time working at CMD, I worked in a DevOps team, performing day-to-day tasks as if I was a full-time employee. I learned a great deal about the tech stack used at CMD, as well as DevOps culture.</p>
+        <span class="section-heading">About CMD</span>
+        <p>CognisantMD’s main product is the Ocean platform. Ocean is actually an acronym, standing for: Open Clinical Encounter Assistance Network, a place where clinicians could develop and share tools to improve patient care. <br/><br/>
+        
+           Ocean is setup as a SAAS business model and is hosted by CMD using a cloud provider. Ocean allows patients and healthcare professionals to securely share private health information for referrals, research, clinical use, and administration. Ocean provides many ways to increase patient engagement with your clinic. There is a tablet application as well as a website. Users will see the patient side of the application, which allows them to book appointments, sign up for reminders, and more. The clinician side of the application allows clinic staff to send patient reminders, create appointments, send e-referrals and more.<br/><br/>
+          
+           Ocean is integrated with many popular EMR (Electronic Medical Record) providers, meaning that information created with Ocean is shared with the EMR in use at the clinic. 
+        </p>
+
+        <span class="section-heading">Goals</span>
+        <p>My goals for this work term were largely focused around learning new technologies, and learning how to best work in a team. <br></br>
+          
+            I set a goal for myself to learn how to use the software tools used at CMD for DevOps. These tools include Terraform, Ansible, bash, and Nagios. I wrote plenty of Terraform, and really enjoyed it. Most of the work which I did involved Terraform in some way. I used Ansible to a lesser extent, mostly just out of necessity due to the nature of the tool. Bash and Nagios I used hand-in-hand with each other, and I was proficient at using these technologies. Overall, I met my goal of learning these new technologies.<br></br>
+          
+            Another goal I set for myself was learning to work better as a team. I had never worked on an agile team prior to this term, and so it was important for me to learn how to be a part of one. Over the course of the term I became more and more involved with the team and really learned through experience how to be a contributing member. I met this goal for sure.<br></br>
+        
+            My last goal was learning to manage my time more effectively. I accomplished this by making use of google calendar to time block my day. I would create a plan each morning for the tasks I wanted to accomplish. I was successful in reaching the goal of using my time better and noticed improvements right away starting this technique.
+        </p>
+        
+        <span class="section-heading">Job Description</span>
+        <p>My role at CMD consisted entirely of duties associated with DevOps. I was responsible for everything from writing Infrastructure as code to adding users to an allow list. Most of the more notable pieces of work I contributed to were in Terraform. These projects include DR migration, email warming, and overhauling user permissions.
+          <br></br>
+          The DR migration project was a huge undertaking. The basic idea was we wanted to migrate our disaster recovery site from MS Azure to AWS, as AWS is where we had all of our production code running. I contributed in writing a lot of the Terraform code for this migration, as well as in removing any remnants of Azure in our codebase after the migration was complete.
+          <br></br>
+          Overhauling user permissions was a great project to work on. The work involved with this included designing a way to programmatically assign users in AWS varying levels of permissions across AWS accounts within the same organization. I created a Terraform module which would assign users roles based on an array and permission set which was passed in. This allowed us to very accurately keep track of any changes made to the lists of who has what permissions. Given that Ocean needs to have great security, this was a very welcome change.
+          <br></br>
+          The email warming project was my favorite project to have worked on in my time at CMD. The preface of the project was this question: If we lose our production server, how would we be able to send email without our main IP? The answer was that we couldn’t if the IP was lost by AWS. The solution to this problem was simple, we needed another IP to fall back on. In practice, this is not so simple. Because of the ancient nature of email, it is filled with scammers and people sending garbage email. This means that there are strict filters applied to senders who send thousands of email, and Ocean send more than 70,000 emails on some days. We would surely trigger some red flags. We had an idea to write some code which would allow us to trickle email through a fresh ip, until it gained a positive reputation and was allowed through these filters. In this project I spent a lot of time writing the Terraform for the load balancer we were using for the email, as well as the terraform behind warming the email address. 
+          <br></br>  
+        </p>
+        
+        <span class="section-heading">Conclusions</span>
+        <p>This 8 month work-term was a wonderful experience. I greatly enjoyed my time working with the DevOps team at CMD, and making new friends there. The work was super enjoyable and I learned so much about DevOps – A field I knew very little about going into the work term. All in all, CognisantMD provided me with the tools, knowledge, and support I needed to succeed. Thank you CMD for a wonderful work term!</p>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <!--
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+              
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            -->
+            <li class="list-inline-item">
+              <a href="https://github.com/wmoore2/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; William Moore 2021</p>
+          
+          <a class="copyright text-muted" href="https://startbootstrap.com/theme/clean-blog">This website template is the Clean Blog Template from Start Bootstrap. Licensed under MIT licensing</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
